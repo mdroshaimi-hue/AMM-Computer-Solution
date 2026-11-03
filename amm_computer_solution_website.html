@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="ms" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMM Computer Solution - Pakar Baiki Laptop, Rakit PC & Servis IT Terpercaya di Malaysia</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ammTeal: '#00A896',
+                        ammTealDark: '#028072',
+                        ammTealLight: '#26C6B2',
+                        ammDark: '#0A1118',
+                        ammNavy: '#111E2E',
+                        ammCard: '#18273A',
+                        ammGray: '#64748B'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0A1118;
+            color: #F1F5F9;
+        }
+        .teal-gradient-bg {
+            background: radial-gradient(circle at 50% 15%, rgba(0, 168, 150, 0.18) 0%, rgba(10, 17, 24, 0) 70%);
+        }
+        .card-glow:hover {
+            box-shadow: 0 10px 30px -10px rgba(0, 168, 150, 0.35);
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden antialiased selection:bg-[#00A896] selection:text-white">
+
+    <!-- Bar Pengumuman Atas -->
+    <div class="bg-gradient-to-r from-[#00A896] via-[#028072] to-[#0D5C75] py-2 px-4 text-xs sm:text-sm text-center text-white font-medium flex items-center justify-center gap-2 shadow-sm">
+        <i class="fa-solid fa-screwdriver-wrench text-amber-300"></i>
+        <span>Pemeriksaan awal & konsultasi masalah komputer PERCUMA! Waranti penuh untuk setiap servis.</span>
+    </div>
+
+    <!-- Navigasi Utama -->
+    <header class="sticky top-0 z-50 bg-[#0A1118]/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo Rasmi AMM Computer Solution (Frame Bulat) -->
+            <a href="#utama" class="flex items-center space-x-3.5 group">
+                <div class="relative w-12 h-12 rounded-full p-[2.5px] bg-gradient-to-tr from-[#00A896] via-teal-300 to-cyan-400 shadow-md shadow-teal-500/30 group-hover:scale-105 transition-all duration-300">
+                    <div class="w-full h-full rounded-full bg-white p-1 flex items-center justify-center overflow-hidden">
+                        <img src="https://scontent.fkul16-1.fna.fbcdn.net/v/t39.30808-6/462302404_8898716776818519_2935396325743660324_n.jpg?stp=dst-jpg_tt6&cstp=mx960x960&ctp=s960x960&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=-bAkOKa9bkMQ7kNvwGPqmHy&_nc_oc=AdpGfmqMORPx7doGDgsabxpp5C47rX9i-18qiUhR0FNkORe7_d8Gl8u37a8oKumirJ8&_nc_zt=23&_nc_ht=scontent.fkul16-1.fna&_nc_gid=klNH0raTscXzbweblDG7bQ&_nc_ss=7a2a8&oh=00_AQQUf5q5_T0uzA6aM76JBavMCrxi6muZo11rKEIkbbbpFw&oe=6AEF4B9D" 
+                             alt="AMM Computer Solution Logo" 
+                             class="w-full h-full object-cover rounded-full"
+                             onerror="this.onerror=null; this.src='https://placehold.co/120x120/ffffff/00A896?text=AMM';">
+                    </div>
+                </div>
+                <div class="leading-tight">
+                    <span class="text-xl font-black tracking-tight text-white block">AMM <span class="text-[#00A896]">COMPUTER</span></span>
+                    <span class="text-[11px] font-semibold text-slate-400 tracking-wider uppercase block">Solution & Repair</span>
+                </div>
+            </a>
+
+            <!-- Menu Desktop -->
+            <nav class="hidden md:flex items-center space-x-7 text-sm font-medium text-slate-300">
+                <a href="#utama" class="hover:text-[#00A896] transition-colors">Laman Utama</a>
+                <a href="#servis" class="hover:text-[#00A896] transition-colors">Servis Kami</a>
+                <a href="#tentang" class="hover:text-[#00A896] transition-colors">Tentang Kami</a>
+                <a href="#kelebihan" class="hover:text-[#00A896] transition-colors">Kelebihan</a>
+                <a href="#hubungi" class="hover:text-[#00A896] transition-colors">Hubungi</a>
+            </nav>
+
+            <!-- Butang Tindakan WhatsApp & Facebook -->
+            <div class="hidden lg:flex items-center space-x-3">
+                <a href="https://www.facebook.com/profile.php?id=61566543103634" target="_blank" rel="noopener noreferrer" 
+                   class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-[#1877F2] text-slate-300 hover:text-white flex items-center justify-center transition duration-200" title="Facebook Rasmi">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://wa.me/60123456789?text=Salam%20AMM%20Computer%20Solution,%20saya%20berminat%20untuk%20dapatkan%20servis%20komputer/laptop." 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="inline-flex items-center gap-2 bg-[#00A896] hover:bg-[#028072] text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-lg shadow-teal-500/20 transition duration-200">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Hubungi Kami</span>
+                </a>
+            </div>
+
+            <!-- Butang Menu Mobil -->
+            <button id="mobileMenuBtn" aria-label="Buka Menu" class="md:hidden text-slate-300 hover:text-white p-2 focus:outline-none">
+                <i class="fa-solid fa-bars-staggered text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Menu Paparan Mobil -->
+        <div id="mobileMenu" class="hidden md:hidden bg-[#111E2E] border-b border-slate-800 px-6 py-5 space-y-4">
+            <a href="#utama" class="block text-slate-200 hover:text-[#00A896] font-medium">Laman Utama</a>
+            <a href="#servis" class="block text-slate-200 hover:text-[#00A896] font-medium">Servis Kami</a>
+            <a href="#tentang" class="block text-slate-200 hover:text-[#00A896] font-medium">Tentang Kami</a>
+            <a href="#kelebihan" class="block text-slate-200 hover:text-[#00A896] font-medium">Kelebihan</a>
+            <a href="#hubungi" class="block text-slate-200 hover:text-[#00A896] font-medium">Borang & Hubungi</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="https://www.facebook.com/profile.php?id=61566543103634" target="_blank" rel="noopener noreferrer"
+                   class="flex items-center justify-center gap-2 bg-[#1877F2] text-white py-2.5 rounded-xl text-sm font-semibold">
+                    <i class="fa-brands fa-facebook"></i> Facebook Rasmi AMM
+                </a>
+                <a href="https://wa.me/60123456789?text=Salam%20AMM%20Computer%20Solution,%20saya%20nak%20tanya%20servis" target="_blank" rel="noopener noreferrer"
+                   class="flex items-center justify-center gap-2 bg-[#00A896] text-white py-2.5 rounded-xl text-sm font-bold">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Sekarang
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="utama" class="relative pt-8 pb-20 md:pt-14 md:pb-28 overflow-hidden teal-gradient-bg">
+            <!-- Ambient Background Glow & Banner Backdrop -->
+            <div class="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+                <img src="https://scontent.fkul8-3.fna.fbcdn.net/v/t39.30808-6/842954786_122233163078551436_376806151890151385_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1144&ctp=s2048x1144&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=3puYCy9xniQQ7kNvwGrtxqW&_nc_oc=Ado279SnJ9wED6Z6etPbisT-lyCMgOUsECHTpc1PE7ezKYW7cadvL2hsXRjZBP6HTi0&_nc_zt=23&_nc_ht=scontent.fkul8-3.fna&_nc_gid=6xbbWCr-xf3_Voi7MyFW2w&_nc_ss=7a2a8&oh=00_AQT_dxXv7O4eLZTwl7zg3kEjaEh9DtYzevgrBuXJObfuhQ&oe=6AEF2DB8" 
+                     alt="AMM Hero Backdrop" 
+                     class="w-full h-full object-cover opacity-15 filter blur-2xl scale-110">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#0A1118]/80 via-[#0A1118]/95 to-[#0A1118]"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                    
+                    <!-- Kiri Teks Utama -->
+                    <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#00A896]/15 border border-[#00A896]/30 text-[#00A896] text-xs sm:text-sm font-semibold">
+                            <i class="fa-solid fa-shield-check"></i> Pakar Servis Komputer & IT Dipercayai
+                        </div>
+
+                        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.18]">
+                            Penyelesaian Komputer & IT <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00A896] via-[#26C6B2] to-[#38BDF8]">Profesional & Terjamin</span>
+                        </h1>
+
+                        <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                            Laptop lembab? Skrin rosak atau nak bina PC gaming idaman? <strong>AMM Computer Solution</strong> menyediakan perkhidmatan baik pulih, naik taraf SSD/RAM, format bersih, dan solusi IT secara telus, pantas, dan berwaranti.
+                        </p>
+
+                        <!-- Butang CTA Pantas -->
+                        <div class="pt-3 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                            <a href="https://wa.me/60123456789?text=Salam%20AMM%20Computer%20Solution,%20saya%20nak%20tanya%20pasal%20servis%20komputer/laptop%20saya." 
+                               target="_blank" rel="noopener noreferrer"
+                               class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#00A896] hover:bg-[#028072] text-white font-bold px-8 py-3.5 rounded-xl shadow-lg shadow-teal-500/25 transition-all duration-200">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                                <span>Hubungi Kami Segera</span>
+                            </a>
+                            <a href="#servis" 
+                               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-800/80 hover:bg-slate-700 border border-slate-700 text-slate-200 font-semibold px-7 py-3.5 rounded-xl transition duration-200">
+                                <i class="fa-solid fa-list-check text-[#00A896]"></i>
+                                <span>Lihat Semua Servis</span>
+                            </a>
+                        </div>
+
+                        <!-- Ciri Ringkas -->
+                        <div class="pt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-slate-800 text-left">
+                            <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
+                                <i class="fa-solid fa-clock-rotate-left text-[#00A896] text-xl mb-1"></i>
+                                <h4 class="text-xs font-bold text-white">Siap Cepat</h4>
+                                <p class="text-[11px] text-slate-400">Penyiapan cekap</p>
+                            </div>
+                            <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
+                                <i class="fa-solid fa-hand-holding-dollar text-[#00A896] text-xl mb-1"></i>
+                                <h4 class="text-xs font-bold text-white">Harga Telus</h4>
+                                <p class="text-[11px] text-slate-400">Tiada caj tersembunyi</p>
+                            </div>
+                            <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
+                                <i class="fa-solid fa-certificate text-[#00A896] text-xl mb-1"></i>
+                                <h4 class="text-xs font-bold text-white">Ada Waranti</h4>
+                                <p class="text-[11px] text-slate-400">Jaminan kualiti kerja</p>
+                            </div>
+                            <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
+                                <i class="fa-solid fa-user-gear text-[#00A896] text-xl mb-1"></i>
+                                <h4 class="text-xs font-bold text-white">Juruteknik Mahir</h4>
+                                <p class="text-[11px] text-slate-400">Diagnosa tepat & rapi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kanan: Paparan Showcase Banner Hero Baharu & Kad Status -->
+                    <div class="lg:col-span-6">
+                        <div class="relative mx-auto max-w-lg lg:max-w-none">
+                            <div class="absolute -inset-1.5 bg-gradient-to-r from-[#00A896] via-teal-400 to-cyan-500 rounded-3xl blur-xl opacity-35 animate-pulse"></div>
+                            
+                            <div class="relative rounded-3xl bg-[#111E2E] border border-slate-700/80 shadow-2xl overflow-hidden">
+                                
+                                <!-- Visual Banner Showcase -->
+                                <div class="relative w-full aspect-[16/9] sm:aspect-[2/1] overflow-hidden group">
+                                    <img src="https://scontent.fkul8-3.fna.fbcdn.net/v/t39.30808-6/842954786_122233163078551436_376806151890151385_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1144&ctp=s2048x1144&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=3puYCy9xniQQ7kNvwGrtxqW&_nc_oc=Ado279SnJ9wED6Z6etPbisT-lyCMgOUsECHTpc1PE7ezKYW7cadvL2hsXRjZBP6HTi0&_nc_zt=23&_nc_ht=scontent.fkul8-3.fna&_nc_gid=6xbbWCr-xf3_Voi7MyFW2w&_nc_ss=7a2a8&oh=00_AQT_dxXv7O4eLZTwl7zg3kEjaEh9DtYzevgrBuXJObfuhQ&oe=6AEF2DB8" 
+                                         alt="AMM Computer Solution Banner" 
+                                         class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+                                         onerror="this.onerror=null; this.src='https://placehold.co/1200x675/111E2E/00A896?text=AMM+Computer+Solution';">
+                                    
+                                    <!-- Banner Gradient Overlay -->
+                                    <div class="absolute inset-0 bg-gradient-to-t from-[#111E2E] via-transparent to-black/30"></div>
+                                    
+                                    <!-- Badge Atas Banner -->
+                                    <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md border border-white/20 text-white text-[11px] font-bold px-3 py-1 rounded-full flex items-center gap-1.5 shadow-md">
+                                        <i class="fa-solid fa-circle text-[7px] text-emerald-400 animate-pulse"></i> Rasmi AMM Solution
+                                    </div>
+                                </div>
+
+                                <!-- Bahagian Info & Profil di Bawah Banner -->
+                                <div class="p-5 sm:p-6 space-y-4">
+                                    <div class="flex items-center justify-between pb-3 border-b border-slate-700/70">
+                                        <div class="flex items-center space-x-3.5">
+                                            <!-- Frame Bulat Logo Hero Card -->
+                                            <div class="relative w-12 h-12 rounded-full p-[2px] bg-gradient-to-tr from-[#00A896] via-teal-300 to-cyan-400 shadow-lg shadow-teal-500/25 shrink-0">
+                                                <div class="w-full h-full rounded-full bg-white p-1 flex items-center justify-center overflow-hidden">
+                                                    <img src="https://scontent.fkul16-1.fna.fbcdn.net/v/t39.30808-6/462302404_8898716776818519_2935396325743660324_n.jpg?stp=dst-jpg_tt6&cstp=mx960x960&ctp=s960x960&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=-bAkOKa9bkMQ7kNvwGPqmHy&_nc_oc=AdpGfmqMORPx7doGDgsabxpp5C47rX9i-18qiUhR0FNkORe7_d8Gl8u37a8oKumirJ8&_nc_zt=23&_nc_ht=scontent.fkul16-1.fna&_nc_gid=klNH0raTscXzbweblDG7bQ&_nc_ss=7a2a8&oh=00_AQQUf5q5_T0uzA6aM76JBavMCrxi6muZo11rKEIkbbbpFw&oe=6AEF4B9D" 
+                                                         alt="AMM Logo" 
+                                                         class="w-full h-full object-cover rounded-full"
+                                                         onerror="this.onerror=null; this.src='https://placehold.co/120x120/ffffff/00A896?text=AMM';">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h3 class="text-sm font-bold text-white leading-tight">AMM Computer Solution</h3>
+                                                <p class="text-[11px] text-[#00A896] font-medium"><i class="fa-solid fa-check-circle text-xs mr-0.5"></i> Servis Komputer & IT Profesional</p>
+                                            </div>
+                                        </div>
+                                        <a href="https://www.facebook.com/profile.php?id=61566543103634" target="_blank" rel="noopener noreferrer" 
+                                           class="text-xs bg-[#1877F2]/20 hover:bg-[#1877F2] text-blue-300 hover:text-white px-3 py-1.5 rounded-lg border border-blue-500/30 transition duration-200 inline-flex items-center gap-1.5 font-medium">
+                                            <i class="fa-brands fa-facebook"></i> Ikuti Kami
+                                        </a>
+                                    </div>
+
+                                    <!-- Status Pantas Servis -->
+                                    <div class="grid grid-cols-2 gap-2.5 text-xs">
+                                        <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-800">
+                                            <div class="text-[#00A896] font-bold flex items-center gap-1.5 mb-0.5">
+                                                <i class="fa-solid fa-laptop-medical"></i> Diagnosa Pantas
+                                            </div>
+                                            <p class="text-[11px] text-slate-400">Pemeriksaan teliti kerosakan perkakasan & perisian.</p>
+                                        </div>
+                                        <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-800">
+                                            <div class="text-cyan-400 font-bold flex items-center gap-1.5 mb-0.5">
+                                                <i class="fa-solid fa-bolt"></i> Naik Taraf SSD/RAM
+                                            </div>
+                                            <p class="text-[11px] text-slate-400">Pantas sehingga 5x ganda untuk kelancaran kerja & gaming.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-gradient-to-r from-[#00A896]/20 to-slate-800 p-3 rounded-xl border border-[#00A896]/30 flex items-center justify-between">
+                                        <span class="text-xs text-slate-200">Perlukan bantuan atau sebut harga pantas?</span>
+                                        <a href="#hubungi" class="text-xs font-bold text-[#00A896] hover:underline flex items-center gap-1">
+                                            Kira Anggaran <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Senarai Servis Komprehensif -->
+        <section id="servis" class="py-20 bg-[#0E1724] border-y border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <span class="text-xs font-bold tracking-widest uppercase text-[#00A896] bg-[#00A896]/10 border border-[#00A896]/20 px-3.5 py-1.5 rounded-full">
+                        Perkhidmatan Lengkap
+                    </span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white">Servis Komputer & IT Profesional</h2>
+                    <p class="text-slate-400 text-sm md:text-base">Kami menawarkan khidmat rawatan dan penyelenggaraan perkakasan serta perisian secara teliti.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Servis 1 -->
+                    <div class="bg-[#142031] border border-slate-700/70 rounded-2xl p-7 transition duration-300 card-glow flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-[#00A896]/10 text-[#00A896] flex items-center justify-center text-2xl mb-5 border border-[#00A896]/20">
+                                <i class="fa-brands fa-windows"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2.5">1. Format & Pasang Semula OS</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                                Format bersih Windows 10/11 & macOS tanpa bloatware/iklan yang tidak perlu. Lengkap bersama perisian asas, pemacu perkakasan (driver) rasmi dan keselamatan antivirus.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-slate-400 space-y-2 border-t border-slate-700/60 pt-4">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#00A896]"></i> Windows 10 / 11 & macOS terkini</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#00A896]"></i> Sandaran (backup) data penting selamat</li>
+                        </ul>
+                    </div>
+
+                    <!-- Servis 2 -->
+                    <div class="bg-[#142031] border border-slate-700/70 rounded-2xl p-7 transition duration-300 card-glow flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-5 border border-cyan-500/20">
+                                <i class="fa-solid fa-laptop-medical"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2.5">2. Baik Pulih Laptop & PC</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                                Membaiki kerosakan motherboard, masalah laptop tidak boleh hidup (no power), skrin bergaris/pecah, bateri kembung, papan kekunci rosak, dan engsel bodi patah.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-slate-400 space-y-2 border-t border-slate-700/60 pt-4">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#00A896]"></i> Pembaikan litar motherboard & cip</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#00A896]"></i> Gantian bateri, keyboard & skrin berkualiti</li>
+                        </ul>
+                    </div>
+
+                    <!-- Servis 3 -->
+                    <div class="bg-[#142031] border border-slate-700/70 rounded-2xl p-7 transition duration-300 card-glow flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-5 border border-emerald-500/20">
+                                <i class="fa-solid fa-gauge-high"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2.5">3. Naik Taraf (SSD & RAM)</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                                Tingkatkan kepantasan komputer lama sehingga 5x-10x ganda dengan pertukaran kepada SSD NVMe/SATA, tambah kapasiti RAM, serta penggantian thermal paste berkualiti tinggi.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-slate-400 space-y-2 border-t border-slate-700/60 pt-4">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#00A896]"></i> SSD M.2 NVMe & RAM DDR4/DDR5 asli</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#00A896]"></i> Thermal paste premium untuk kurangkan panas</li>
+                        </ul>
+                    </div>
+
+                    <!-- Servis 4 -->
+                    <div class="bg-[#142031] border border-slate-700/70 rounded-2xl p-7 transition duration-300 card-glow flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-5 border border-purple-500/20">
+                                <i class="fa-solid fa-computer"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2.5">4. Custom PC Gaming & Kerja</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                                Khidmat rundingan dan pemasangan PC desktop mengikut bajet anda—untuk gaming, kerja reka grafik, suntingan video, mahupun kegunaan pejabat dan kaunter jualan.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-slate-400 space-y-2 border-t border-slate-700/60 pt-4">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#00A896]"></i> Pengurusan kabel kemas & rapi</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#00A896]"></i> Ujian ketahanan sebelum diserahkan</li>
+                        </ul>
+                    </div>
+
+                    <!-- Servis 5 -->
+                    <div class="bg-[#142031] border border-slate-700/70 rounded-2xl p-7 transition duration-300 card-glow flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-2xl mb-5 border border-blue-500/20">
+                                <i class="fa-solid fa-network-wired"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2.5">5. Rangkaian Wi-Fi & CCTV</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                                Pemasangan kabel LAN rangkaian pejabat, konfigurasi router / access point untuk liputan Wi-Fi menyeluruh, serta servis pemasangan sistem keselamatan CCTV.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-slate-400 space-y-2 border-t border-slate-700/60 pt-4">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#00A896]"></i> Tetapan sistem rangkaian stabil & selamat</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#00A896]"></i> Pemantauan CCTV melalui telefon pintar</li>
+                        </ul>
+                    </div>
+
+                    <!-- Servis 6 -->
+                    <div class="bg-[#142031] border border-slate-700/70 rounded-2xl p-7 transition duration-300 card-glow flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-rose-500/10 text-rose-400 flex items-center justify-center text-2xl mb-5 border border-rose-500/20">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2.5">6. Pemulihan Data & Sandaran</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                                Menyelamatkan data peribadi atau fail kerja berharga daripada hard disk rosak, pemacu kilat (pendrive) tidak dapat dikesan, atau tersilap format.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-slate-400 space-y-2 border-t border-slate-700/60 pt-4">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#00A896]"></i> Kerahsiaan data dijamin 100%</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#00A896]"></i> Kadar kejayaan pemulihan yang tinggi</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Tentang Kami & Keistimewaan -->
+        <section id="tentang" class="py-20 bg-[#0A1118]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Kiri: Penjelasan Tentang AMM -->
+                    <div class="lg:col-span-6 space-y-6">
+                        <span class="text-xs font-bold tracking-widest uppercase text-[#00A896] bg-[#00A896]/10 border border-[#00A896]/20 px-3.5 py-1.5 rounded-full">
+                            Tentang AMM Computer Solution
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+                            Komited Memberikan Rawatan Terbaik untuk Komputer Anda
+                        </h2>
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            Di <strong>AMM Computer Solution</strong>, kami memahami peranti komputer atau laptop anda adalah nadi harian untuk bekerja, belajar, dan berhibur. Kami menyediakan khidmat pembaikan yang jujur tanpa membebankan poket anda dengan caj yang tidak perlu.
+                        </p>
+
+                        <!-- Poin Utama -->
+                        <div class="space-y-4 pt-2">
+                            <div class="flex items-start gap-3.5">
+                                <div class="w-7 h-7 rounded-full bg-[#00A896]/20 text-[#00A896] flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check text-xs"></i>
+                                </div>
+                                <p class="text-sm text-slate-300"><strong class="text-white">Pemeriksaan Jujur:</strong> Kami jelaskan punca kerosakan secara terperinci sebelum sebarang kerja dijalankan.</p>
+                            </div>
+                            <div class="flex items-start gap-3.5">
+                                <div class="w-7 h-7 rounded-full bg-[#00A896]/20 text-[#00A896] flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check text-xs"></i>
+                                </div>
+                                <p class="text-sm text-slate-300"><strong class="text-white">Komponen Berkualiti:</strong> Menggunakan alat ganti original serta bahan seperti thermal paste berprestasi tinggi.</p>
+                            </div>
+                            <div class="flex items-start gap-3.5">
+                                <div class="w-7 h-7 rounded-full bg-[#00A896]/20 text-[#00A896] flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check text-xs"></i>
+                                </div>
+                                <p class="text-sm text-slate-300"><strong class="text-white">Mudah Dihubungi:</strong> Anda boleh terus bertanya melalui WhatsApp atau mengikuti perkembangan terkini di Facebook rasmi kami.</p>
+                            </div>
+                        </div>
+
+                        <div class="pt-2 flex items-center gap-4">
+                            <a href="https://www.facebook.com/profile.php?id=61566543103634" target="_blank" rel="noopener noreferrer"
+                               class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600/20 border border-blue-500/40 text-blue-400 hover:bg-blue-600 hover:text-white transition duration-200 text-xs font-bold">
+                                <i class="fa-brands fa-facebook"></i> Ikuti Kami di Facebook
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Kanan: Reka bentuk lencana logo & jaminan -->
+                    <div id="kelebihan" class="lg:col-span-6">
+                        <div class="bg-gradient-to-br from-[#142031] to-[#0D1522] border border-slate-700/80 rounded-3xl p-8 relative shadow-2xl">
+                            
+                            <div class="flex items-center gap-4 pb-6 border-b border-slate-700/60">
+                                <!-- Frame Bulat Logo Seksyen Kelebihan -->
+                                <div class="relative w-16 h-16 rounded-full p-[2.5px] bg-gradient-to-tr from-[#00A896] to-cyan-400 shadow-xl shadow-teal-500/25 shrink-0">
+                                    <div class="w-full h-full rounded-full bg-white p-1.5 flex items-center justify-center overflow-hidden">
+                                        <img src="https://scontent.fkul16-1.fna.fbcdn.net/v/t39.30808-6/462302404_8898716776818519_2935396325743660324_n.jpg?stp=dst-jpg_tt6&cstp=mx960x960&ctp=s960x960&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=-bAkOKa9bkMQ7kNvwGPqmHy&_nc_oc=AdpGfmqMORPx7doGDgsabxpp5C47rX9i-18qiUhR0FNkORe7_d8Gl8u37a8oKumirJ8&_nc_zt=23&_nc_ht=scontent.fkul16-1.fna&_nc_gid=klNH0raTscXzbweblDG7bQ&_nc_ss=7a2a8&oh=00_AQQUf5q5_T0uzA6aM76JBavMCrxi6muZo11rKEIkbbbpFw&oe=6AEF4B9D" 
+                                             alt="AMM Computer Solution Logo" 
+                                             class="w-full h-full object-cover rounded-full"
+                                             onerror="this.onerror=null; this.src='https://placehold.co/120x120/ffffff/00A896?text=AMM';">
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-white">4 Jaminan Utama Kami</h3>
+                                    <p class="text-xs text-[#00A896]">Standard perkhidmatan AMM Computer Solution</p>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                                <div class="bg-slate-900/70 p-4 rounded-xl border border-slate-800">
+                                    <i class="fa-solid fa-gauge text-[#00A896] text-xl mb-2"></i>
+                                    <h4 class="text-sm font-bold text-white">Pantas & Tepat</h4>
+                                    <p class="text-xs text-slate-400 mt-1">Selesai mengikut jadual tanpa menjejaskan kualiti.</p>
+                                </div>
+                                <div class="bg-slate-900/70 p-4 rounded-xl border border-slate-800">
+                                    <i class="fa-solid fa-file-invoice-dollar text-[#00A896] text-xl mb-2"></i>
+                                    <h4 class="text-sm font-bold text-white">Harga Berpatutan</h4>
+                                    <p class="text-xs text-slate-400 mt-1">Kos dijelaskan terlebih dahulu sebelum mula membaiki.</p>
+                                </div>
+                                <div class="bg-slate-900/70 p-4 rounded-xl border border-slate-800">
+                                    <i class="fa-solid fa-shield-halved text-[#00A896] text-xl mb-2"></i>
+                                    <h4 class="text-sm font-bold text-white">Jaminan / Waranti</h4>
+                                    <p class="text-xs text-slate-400 mt-1">Setiap alat ganti dan kerja servis dilindungi waranti.</p>
+                                </div>
+                                <div class="bg-slate-900/70 p-4 rounded-xl border border-slate-800">
+                                    <i class="fa-solid fa-lock text-[#00A896] text-xl mb-2"></i>
+                                    <h4 class="text-sm font-bold text-white">Privasi Terjaga</h4>
+                                    <p class="text-xs text-slate-400 mt-1">Data dan fail peribadi pelanggan kekal selamat dan sulit.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Bahagian Hubungi & Borang Tempahan WhatsApp -->
+        <section id="hubungi" class="py-20 bg-[#0E1724] border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <span class="text-xs font-bold tracking-widest uppercase text-[#00A896] bg-[#00A896]/10 border border-[#00A896]/20 px-3.5 py-1.5 rounded-full">
+                        Kira Anggaran & Tempahan
+                    </span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white">Kalkulator Anggaran & Borang Servis</h2>
+                    <p class="text-slate-400 text-sm md:text-base">Pilih servis yang diperlukan untuk mendapatkan anggaran kasar atau terus hantarkan butiran kepada kami melalui WhatsApp.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                    
+                    <!-- Info Hubungi & Kalkulator Sebut Harga -->
+                    <div class="lg:col-span-5 space-y-5">
+                        
+                        <!-- Kalkulator Pantas -->
+                        <div class="p-6 rounded-2xl bg-[#142031] border border-[#00A896]/30 shadow-lg space-y-4">
+                            <div class="flex items-center justify-between pb-3 border-b border-slate-700/60">
+                                <h4 class="text-sm font-bold text-white flex items-center gap-2">
+                                    <i class="fa-solid fa-calculator text-[#00A896]"></i> Kalkulator Anggaran Pantas
+                                </h4>
+                                <span class="text-[10px] bg-[#00A896]/20 text-[#00A896] px-2 py-0.5 rounded font-semibold">Anggaran</span>
+                            </div>
+                            
+                            <div class="space-y-2 text-xs">
+                                <label class="flex items-center justify-between p-2 rounded-lg bg-slate-900/60 cursor-pointer hover:bg-slate-900 transition">
+                                    <span class="flex items-center gap-2 text-slate-300">
+                                        <input type="checkbox" class="calc-item accent-[#00A896]" data-price="50" onchange="calcTotal()"> Format Windows & Driver Asas
+                                    </span>
+                                    <span class="font-bold text-[#00A896]">RM 50</span>
+                                </label>
+                                <label class="flex items-center justify-between p-2 rounded-lg bg-slate-900/60 cursor-pointer hover:bg-slate-900 transition">
+                                    <span class="flex items-center gap-2 text-slate-300">
+                                        <input type="checkbox" class="calc-item accent-[#00A896]" data-price="60" onchange="calcTotal()"> Servis Cuci Habuk + Thermal Paste
+                                    </span>
+                                    <span class="font-bold text-[#00A896]">RM 60</span>
+                                </label>
+                                <label class="flex items-center justify-between p-2 rounded-lg bg-slate-900/60 cursor-pointer hover:bg-slate-900 transition">
+                                    <span class="flex items-center gap-2 text-slate-300">
+                                        <input type="checkbox" class="calc-item accent-[#00A896]" data-price="130" onchange="calcTotal()"> Upgrade SSD NVMe / SATA (256GB - 512GB)
+                                    </span>
+                                    <span class="font-bold text-[#00A896]">RM 130+</span>
+                                </label>
+                                <label class="flex items-center justify-between p-2 rounded-lg bg-slate-900/60 cursor-pointer hover:bg-slate-900 transition">
+                                    <span class="flex items-center gap-2 text-slate-300">
+                                        <input type="checkbox" class="calc-item accent-[#00A896]" data-price="80" onchange="calcTotal()"> Upah Pasang Custom PC + Cable Mgmt
+                                    </span>
+                                    <span class="font-bold text-[#00A896]">RM 80</span>
+                                </label>
+                            </div>
+
+                            <div class="pt-3 border-t border-slate-700/60 flex items-center justify-between">
+                                <span class="text-xs text-slate-400">Jumlah Anggaran Kasar:</span>
+                                <span id="calcTotalDisplay" class="text-lg font-black text-emerald-400">RM 0</span>
+                            </div>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-[#142031] border border-slate-700/70 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-[#00A896]/15 text-[#00A896] flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block font-medium">WhatsApp Rasmi</span>
+                                <a href="https://wa.me/60123456789" target="_blank" rel="noopener noreferrer" class="text-base font-bold text-white hover:text-[#00A896] transition-colors">
+                                    +60 12-345 6789
+                                </a>
+                                <p class="text-[11px] text-slate-400">Balasan pantas semasa waktu operasi</p>
+                            </div>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-[#142031] border border-slate-700/70 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-600/15 text-blue-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block font-medium">Laman Facebook Rasmi</span>
+                                <a href="https://www.facebook.com/profile.php?id=61566543103634" target="_blank" rel="noopener noreferrer" class="text-base font-bold text-white hover:text-blue-400 transition-colors inline-flex items-center gap-1.5">
+                                    AMM Computer Solution <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                                </a>
+                                <p class="text-[11px] text-slate-400">Ikuti maklumat & tawaran terkini di Facebook</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Borang Interaktif Menghantar WhatsApp -->
+                    <div class="lg:col-span-7">
+                        <div class="bg-[#142031] border border-slate-700/80 rounded-3xl p-6 sm:p-8 shadow-xl">
+                            <h3 class="text-xl sm:text-2xl font-bold text-white mb-1">Borang Permintaan Servis</h3>
+                            <p class="text-xs text-slate-400 mb-6">Lengkapkan borang di bawah untuk membuka perbualan WhatsApp dengan mesej yang tersusun kemas.</p>
+
+                            <form id="bookingForm" class="space-y-4">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label for="custName" class="block text-xs font-semibold text-slate-300 mb-1.5">Nama Anda</label>
+                                        <input type="text" id="custName" required placeholder="Contoh: Amirul Hafiz"
+                                               class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#00A896]">
+                                    </div>
+                                    <div>
+                                        <label for="custPhone" class="block text-xs font-semibold text-slate-300 mb-1.5">Nombor Telefon (WhatsApp)</label>
+                                        <input type="tel" id="custPhone" placeholder="Contoh: 012-3456789"
+                                               class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#00A896]">
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label for="deviceType" class="block text-xs font-semibold text-slate-300 mb-1.5">Model / Jenama Peranti</label>
+                                        <input type="text" id="deviceType" required placeholder="Contoh: Laptop Asus TUF / PC Desktop"
+                                               class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#00A896]">
+                                    </div>
+                                    <div>
+                                        <label for="serviceType" class="block text-xs font-semibold text-slate-300 mb-1.5">Jenis Servis Yang Diperlukan</label>
+                                        <select id="serviceType" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#00A896]">
+                                            <option value="Format Semula & Pasang OS">Format Semula & Pasang OS</option>
+                                            <option value="Laptop Tak Boleh Hidup / Rosak Skrin">Laptop Tak Boleh Hidup / Rosak Skrin</option>
+                                            <option value="Naik Taraf (Upgrade SSD / RAM)">Naik Taraf (Upgrade SSD / RAM)</option>
+                                            <option value="Pemasangan PC Custom (Gaming/Kerja)">Pemasangan PC Custom (Gaming/Kerja)</option>
+                                            <option value="Servis Panas / Kipas Bising / Thermal Paste">Servis Panas / Kipas Bising / Thermal Paste</option>
+                                            <option value="Rangkaian Wi-Fi / CCTV">Rangkaian Wi-Fi / CCTV</option>
+                                            <option value="Pemulihan Data Hilang (Data Recovery)">Pemulihan Data Hilang (Data Recovery)</option>
+                                            <option value="Lain-lain Masalah">Lain-lain Masalah</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="problemDesc" class="block text-xs font-semibold text-slate-300 mb-1.5">Penerangan Masalah / Keperluan</label>
+                                    <textarea id="problemDesc" rows="4" required placeholder="Ceritakan simptom masalah komputer anda (contoh: Laptop tiba-tiba tak ada display, ada bunyi beep, atau perlukan sebut harga rakit PC bajet RM2,500)..."
+                                              class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#00A896]"></textarea>
+                                </div>
+
+                                <button type="submit" 
+                                        class="w-full inline-flex items-center justify-center gap-3 bg-[#00A896] hover:bg-[#028072] text-white font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-teal-500/25 transition duration-200">
+                                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                                    <span>Hantar Permintaan ke WhatsApp AMM Solution</span>
+                                </button>
+                            </form>
+
+                            <div id="statusAlert" class="hidden mt-4 p-3.5 bg-[#00A896]/20 border border-[#00A896]/50 rounded-xl text-teal-300 text-xs text-center font-medium">
+                                <i class="fa-solid fa-spinner fa-spin mr-1"></i> Sedang membuka aplikasi WhatsApp anda, sila tunggu sebentar...
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#070D15] border-t border-slate-800 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                
+                <!-- Info Syarikat & Logo (Frame Bulat) -->
+                <div class="space-y-4 md:col-span-2">
+                    <div class="flex items-center space-x-3.5">
+                        <div class="relative w-12 h-12 rounded-full p-[2px] bg-gradient-to-tr from-[#00A896] to-cyan-400 shadow-md shadow-teal-500/20 shrink-0">
+                            <div class="w-full h-full rounded-full bg-white p-1 flex items-center justify-center overflow-hidden">
+                                <img src="https://scontent.fkul16-1.fna.fbcdn.net/v/t39.30808-6/462302404_8898716776818519_2935396325743660324_n.jpg?stp=dst-jpg_tt6&cstp=mx960x960&ctp=s960x960&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=-bAkOKa9bkMQ7kNvwGPqmHy&_nc_oc=AdpGfmqMORPx7doGDgsabxpp5C47rX9i-18qiUhR0FNkORe7_d8Gl8u37a8oKumirJ8&_nc_zt=23&_nc_ht=scontent.fkul16-1.fna&_nc_gid=klNH0raTscXzbweblDG7bQ&_nc_ss=7a2a8&oh=00_AQQUf5q5_T0uzA6aM76JBavMCrxi6muZo11rKEIkbbbpFw&oe=6AEF4B9D" 
+                                     alt="AMM Computer Solution Logo" 
+                                     class="w-full h-full object-cover rounded-full"
+                                     onerror="this.onerror=null; this.src='https://placehold.co/120x120/ffffff/00A896?text=AMM';">
+                            </div>
+                        </div>
+                        <span class="text-xl font-bold tracking-tight text-white">AMM <span class="text-[#00A896]">Computer Solution</span></span>
+                    </div>
+                    <p class="text-xs text-slate-400 max-w-md leading-relaxed">
+                        Pusat perkhidmatan baik pulih laptop, PC kustom, format sistem operasi, naik taraf perkakasan dan rangkaian Wi-Fi/CCTV dengan standard profesional dan dipercayai di Malaysia.
+                    </p>
+                    <div class="flex items-center space-x-3 pt-1">
+                        <a href="https://www.facebook.com/profile.php?id=61566543103634" target="_blank" rel="noopener noreferrer" 
+                           class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-[#1877F2] text-slate-300 hover:text-white flex items-center justify-center transition-colors" title="Facebook AMM">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/60123456789" target="_blank" rel="noopener noreferrer" 
+                           class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-[#00A896] text-slate-300 hover:text-white flex items-center justify-center transition-colors" title="WhatsApp AMM">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pautan Pantas -->
+                <div>
+                    <h5 class="text-white font-semibold text-sm mb-4">Pautan Pantas</h5>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#utama" class="hover:text-[#00A896] transition-colors">Laman Utama</a></li>
+                        <li><a href="#servis" class="hover:text-[#00A896] transition-colors">Perkhidmatan Servis</a></li>
+                        <li><a href="#tentang" class="hover:text-[#00A896] transition-colors">Tentang Syarikat</a></li>
+                        <li><a href="#kelebihan" class="hover:text-[#00A896] transition-colors">Kelebihan Kami</a></li>
+                        <li><a href="#hubungi" class="hover:text-[#00A896] transition-colors">Borang Tempahan</a></li>
+                    </ul>
+                </div>
+
+                <!-- Servis Utama -->
+                <div>
+                    <h5 class="text-white font-semibold text-sm mb-4">Servis Paling Popular</h5>
+                    <ul class="space-y-2 text-xs">
+                        <li><span class="hover:text-[#00A896] transition-colors">Format Bersih Windows 10/11</span></li>
+                        <li><span class="hover:text-[#00A896] transition-colors">Gantian SSD Laju & Tambah RAM</span></li>
+                        <li><span class="hover:text-[#00A896] transition-colors">Baiki Motherboard & Skrin Pecah</span></li>
+                        <li><span class="hover:text-[#00A896] transition-colors">Rakit Custom PC Gaming</span></li>
+                        <li><span class="hover:text-[#00A896] transition-colors">Servis Cuci Habuk & Thermal Paste</span></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 AMM Computer Solution. Hak Cipta Terpelihara.</p>
+                <p class="mt-2 sm:mt-0">Solusi Teknologi Komputer & IT Dipercayai</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Skrip Interaktif -->
+    <script>
+        // Fungsi Kalkulator Anggaran Sebut Harga
+        function calcTotal() {
+            const checkboxes = document.querySelectorAll('.calc-item');
+            let sum = 0;
+            checkboxes.forEach(cb => {
+                if(cb.checked) {
+                    sum += parseInt(cb.getAttribute('data-price') || 0);
+                }
+            });
+            document.getElementById('calcTotalDisplay').innerText = 'RM ' + sum;
+        }
+
+        // Kawalan Menu Mobil
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Borang Tempahan Servis Menghubungi WhatsApp
+        const bookingForm = document.getElementById('bookingForm');
+        const statusAlert = document.getElementById('statusAlert');
+
+        bookingForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('custName').value.trim();
+            const phone = document.getElementById('custPhone').value.trim() || 'Tidak dinyatakan';
+            const device = document.getElementById('deviceType').value.trim();
+            const service = document.getElementById('serviceType').value;
+            const description = document.getElementById('problemDesc').value.trim();
+
+            const waText = 
+`Salam AMM Computer Solution,%0A%0A` +
+`Saya ingin bertanyakan tentang servis komputer/laptop:%0A` +
+`*Nama:* ${encodeURIComponent(name)}%0A` +
+`*No. Telefon:* ${encodeURIComponent(phone)}%0A` +
+`*Model Peranti:* ${encodeURIComponent(device)}%0A` +
+`*Servis Dipilih:* ${encodeURIComponent(service)}%0A` +
+`*Keterangan Masalah:*%0A${encodeURIComponent(description)}%0A%0A` +
+`Mohon maklum balas bagi anggaran kos dan cadangan penambahbaikan. Terima kasih!`;
+
+            statusAlert.classList.remove('hidden');
+
+            setTimeout(() => {
+                // Nombor WhatsApp teknisi / premis AMM
+                window.open(`https://wa.me/60123456789?text=${waText}`, '_blank');
+                statusAlert.classList.add('hidden');
+            }, 500);
+        });
+    </script>
+</body>
+</html>
